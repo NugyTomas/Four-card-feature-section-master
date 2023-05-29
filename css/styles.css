@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(4, 0.9fr);
+    padding: 10% 5% 8% 5%;
+    gap: 1.5rem;
+    max-width: 305px;
+}
+
+
+header {
+    text-align: center;
+    padding-bottom: 5%;
+    line-height: 1.6;
+}
+
+h2 {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: hsl(234, 12%, 34%);
+}
+
+h3 {
+    font-size: 0.97rem;
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1), 0 7px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    min-height: 165px;
+    padding: 7% 7% 5% 10%;
+}
+
+.supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.team_builder {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 4px solid hsl(212, 86%, 64%);
+
+}
+
+.card h1 {
+    font-size: 1.35rem;
+    margin-bottom: 0;
+}
+
+.card p {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: hsl(229, 6%, 66%);
+    line-height: 1.6;
+}
+
+img {
+    display: flex;
+    width: 22%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    left: 77%;
+    top: 6%;
+}
+
+@media (min-width: 800px) {
+
+    .page {
+        grid-template-columns: repeat(3, 0.95fr);
+        grid-template-rows: repeat(3, 0.9fr);
+        padding: 3% 8% 10% 8%;
+        gap: 1.7rem;
+        max-width: 1440px;
+    }
+
+
+    header {
+        padding-bottom: 2%;
+        line-height: 1.6;
+        grid-area: 1/1/2/4;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        padding-left: 26%;
+        padding-right: 26%;
+    }
+
+    .card {
+        min-height: 220px;
+        max-height: 220px;
+        max-width: 380px;
+    }
+
+    .supervisor {
+        grid-area: 2/1/4/2;
+        align-self: center;
+    }
+
+    .calculator {
+        grid-area: 2/3/4/4;
+        align-self: center;
+    }
+
+    .card h1 {
+        font-size: 1.45rem;
+        padding-bottom: 2%;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    img {
+        top: 2.4rem
+    }
+}
