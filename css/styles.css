@@ -24,13 +24,14 @@ header {
     line-height: 1.6;
 }
 
-h2 {
-    font-weight: 200;
+h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
     color: hsl(234, 12%, 34%);
-    margin-bottom: 0;
+    font-weight: 200;
 }
 
-h1 {
+h2 {
     font-size: 1.5rem;
     margin-top: 0;
     color: hsl(234, 12%, 34%);
@@ -43,12 +44,12 @@ h3 {
 }
 
 .card {
-    border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1), 0 7px 7px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     min-height: 165px;
     padding: 7% 7% 5% 10%;
 }
+
 
 .supervisor {
     border-top: 4px solid hsl(180, 62%, 55%);
@@ -67,7 +68,11 @@ h3 {
 
 }
 
-.card h1 {
+.card h4 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
     font-size: 1.35rem;
     margin-bottom: 0;
 }
@@ -107,11 +112,11 @@ img {
         grid-area: 1/1/2/4;
     }
 
-    h2 {
+    h1 {
         font-size: 2.4rem;
     }
 
-    h1 {
+    h2 {
         font-size: 2.4rem;
     }
 
@@ -137,7 +142,7 @@ img {
         align-self: center;
     }
 
-    .card h1 {
+    .card h4 {
         font-size: 1.45rem;
         padding-bottom: 2%;
     }
